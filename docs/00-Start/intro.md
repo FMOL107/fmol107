@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: CutTheWire🦖
+slug: /start/intro
 ---
 
 # CutTheWire🦖
