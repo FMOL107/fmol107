@@ -46,7 +46,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          //routeBasePath: '/',   // ← esto hace que / sea /docs
+          routeBasePath: '/',   // ← esto hace que / sea /docs
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -107,7 +107,7 @@ const config = {
             items: [
               {
                 label: 'Intro',
-                to: '/docs/Start/intro',
+                to: '/start/intro',
               },
             ],
           },
@@ -116,15 +116,15 @@ const config = {
             items: [
               {
                 label: 'DNS - 53',
-                to: '/docs/NET-Pen/Services/dns',
+                to: '/net-pen/services/dns',
               },
               {
                 label: 'KERBEROS - 88',
-                to: '/docs/NET-Pen/Services/kerberos',
+                to: '/net-pen/services/kerberos',
               },
               {
                 label: 'LDAP - 389,636,3268,3269',
-                to: '/docs/NET-Pen/Services/ldap',
+                to: '/net-pen/services/ldap',
               },
             ],
           },
@@ -137,7 +137,7 @@ const config = {
               //},
               {
                 label: 'Toolbox',
-                to: '/docs/Toolbox/Enumeration-Tools',
+                to: '/net-pen/techniques/enumeration-tools',
               },
               {
                 label: 'HTB',
