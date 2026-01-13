@@ -149,7 +149,7 @@ Además, las capturas pueden descargarse directamente mediante:
 
 Este comportamiento corresponde a una **Insecure Direct Object Reference (IDOR)**, ya que la aplicación no valida la propiedad de los recursos antes de permitir su acceso.
 
-### 4. Foothold
+## 4. Foothold
 
 El archivo **`0.pcap`**, accesible mediante el IDOR identificado previamente, contiene tráfico **FTP no cifrado**.
 
@@ -167,11 +167,11 @@ uid=1001(nathan) gid=1001(nathan) groups=1001(nathan)
 ```
 
 
-### 5. Privilege Escalation
+## 5. Privilege Escalation
 
 Una vez obtenido acceso como el usuario **nathan**, se procede a la enumeración local en busca de vectores de escalada de privilegios. Para ello se utiliza la herramienta **linPEAS**.
 
-#### 5.1 Enumeración con linPEAS
+### 5.1 Enumeración con linPEAS
 
 Se despliega un servidor HTTP en la máquina atacante para facilitar la transferencia del script.
 
@@ -196,7 +196,7 @@ chmod +x linpeas.sh
 
 Durante la ejecución de linPEAS se identifican varios hallazgos, siendo el más relevante la presencia de **capacidades asignadas a binarios**.
 
-#### 5.2 Linux Capabilities
+### 5.2 Linux Capabilities
 
 El reporte muestra que el binario **`/usr/bin/python3.8`** tiene capacidades configuradas.
 
@@ -214,7 +214,7 @@ getcap /usr/bin/python3.8
 
 La capacidad **`cap_setuid`** permite a un proceso cambiar su UID sin necesidad del bit SUID, lo que posibilita elevar privilegios a **root**. Este comportamiento no es el predeterminado y representa un vector claro de escalada.
 
-#### 5.3 Escalada a root
+### 5.3 Escalada a root
 
 Según la documentación de **[GTFOBins](https://gtfobins.github.io/gtfobins/python/#capabilities)**, Python puede abusar de esta capacidad para ejecutar comandos como UID 0.
 
