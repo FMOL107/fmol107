@@ -29,7 +29,7 @@ Durante la enumeración web, prestar atención a:
 
 - Parámetros numéricos incrementales
 - URLs del tipo:
-	- /object/<id>  
+	- /object/&lt;id&gt;
 	- /download?id=123  
 	- /user/42
 - Respuestas válidas al modificar el ID manualmente
