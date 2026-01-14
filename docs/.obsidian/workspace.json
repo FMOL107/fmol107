@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "70-toolbox/linux-capabilities-abuse.md",
+                "file": "40-web-pen/20-vulns/idor.md",
                 "mode": "source",
                 "source": true
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "70-toolbox/linux-capabilities-abuse.md",
+                "file": "40-web-pen/20-vulns/idor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "70-toolbox/linux-capabilities-abuse.md",
+                "file": "40-web-pen/20-vulns/idor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "70-toolbox/linux-capabilities-abuse.md"
+                "file": "40-web-pen/20-vulns/idor.md"
               }
             }
           }
@@ -160,10 +160,11 @@
   },
   "active": "9f8598343b5ffab9",
   "lastOpenFiles": [
-    "70-toolbox/file-transfer/python-http-server.md",
-    "70-toolbox/linux-capabilities-abuse.md",
-    "70-toolbox/Sin título",
     "90-writeups/HTB/cap/cap.md",
+    "40-web-pen/20-vulns/idor.md",
+    "70-toolbox/linux-capabilities-abuse.md",
+    "70-toolbox/file-transfer/python-http-server.md",
+    "70-toolbox/Sin título",
     "70-toolbox/file-transfer",
     "90-writeups/HTB/cap/img/sudo_version.png",
     "90-writeups/HTB/cap/img/posibles_cves.png",
