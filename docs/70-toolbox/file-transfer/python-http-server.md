@@ -40,14 +40,13 @@ python3 -m http.server 80
 Esto expone el contenido del directorio actual vía HTTP en el puerto 80.
 
 Notas:
-
-- Puede usarse otro puerto si es necesario (ej. `8000`)
 - Requiere permisos si se usa un puerto &lt;1024
+- Puede usarse otro puerto si es necesario (ej. `8000`)
+
 
 ```bash
-python3 -m http.server 8000`
+python3 -m http.server 8000
 ```
-
 
 ---
 
